@@ -1,0 +1,15 @@
+body{
+overflow-x:none;
+margin:0;
+padding:0;
+}
+
+
+.showcase-container{
+/* button positioning settup - not necessary part */
+display:inline-block;
+float:none;
+
+background:rgba(0,0,255,0.5);
+width:100%;
+}
