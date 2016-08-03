@@ -25,13 +25,10 @@ background: rgba(255,250,205,1);
 }
 
 
- input{
+input{
 display: block;
+
 background-color: rgb(255, 255, 255);
-
-border-bottom-style: solid;
-border-bottom-width: 1px;
-
 color: rgb(129, 130, 130);
 
 font-family: Arial,Helvetica,sans-serif;
@@ -42,9 +39,11 @@ line-height: 21px;
 
 vertical-align: middle;
 
+border-style: solid;
+border-width: 1px;
 border-radius:3px;
+
 width: 210px;
-xxpadding-left:10px;
 }
 
 
@@ -54,9 +53,6 @@ textarea{
 display: block;
 background-color: rgb(255, 255, 255);
 
-border-bottom-style: solid;
-border-bottom-width: 1px;
-
 color: rgb(129, 130, 130);
 
 font-family: Arial,Helvetica,sans-serif;
@@ -67,10 +63,12 @@ line-height: 21px;
 
 vertical-align: middle;
 
+border-style: solid;
+border-width: 1px;
 border-radius:3px;
+
 width: 210px;
 height:100px;
-xxpadding-left:10px;
 }
 
 
