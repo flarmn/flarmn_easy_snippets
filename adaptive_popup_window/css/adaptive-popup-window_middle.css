@@ -1,0 +1,115 @@
+
+
+.reg-form-main{
+display:block;
+float:left;
+
+padding:20px 10px;
+margin-left:8%;
+margin-right:10%;
+
+width:80%;
+height:auto;
+
+border-radius:6px;
+
+background: rgba(255,250,205,1);
+}
+
+
+.form-group{
+	display:block;
+	margin-bottom:30px;
+	margin-left:20%;
+	margin-right:20%;
+}
+
+
+input{
+display: block;
+
+background-color: rgb(255, 255, 255);
+color: rgb(129, 130, 130);
+
+font-family: Arial,Helvetica,sans-serif;
+font-size: 13px;
+font-weight: 400;
+height: 40px;
+line-height: 21px;
+
+vertical-align: middle;
+
+border-style: solid;
+border-width: 1px;
+border-radius:3px;
+
+width: 210px;
+}
+
+
+
+
+textarea{
+display: block;
+background-color: rgb(255, 255, 255);
+
+color: rgb(129, 130, 130);
+
+font-family: Arial,Helvetica,sans-serif;
+font-size: 13px;
+font-weight: 400;
+height: 40px;
+line-height: 21px;
+
+vertical-align: middle;
+
+border-style: solid;
+border-width: 1px;
+border-radius:3px;
+
+width: 210px;
+height:100px;
+}
+
+
+
+
+ label{
+display: block;
+color: rgb(129, 130, 130);
+cursor: pointer;
+display: inline-block;
+font-family: Arial,Helvetica,sans-serif;
+font-size: 13px;
+font-weight: 400;
+line-height: 21px;
+margin-bottom: 5px;
+}
+
+
+input[type=submit]{
+
+margin-top:20px;
+margin-bottom:20px;
+
+margin-left:20%;
+margin-right:20%;
+
+padding:10px 20px;
+
+color:white;
+background: #273440;
+
+border:none;
+border-radius: 6px;
+
+text-decoration: none;
+text-transform: uppercase;
+font-family: "Archivo Narrow",sans-serif;
+font-size:14px;
+font-weight:bold;
+}
+
+input[type=submit]:hover{
+background: rgba(50,150,255,1);
+}
