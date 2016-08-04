@@ -10,12 +10,43 @@ padding:0;
 display:block;
 float:left;
 
-background:rgba(0,0,255,0.5);
-width:30%;
+xxbackground:rgba(0,0,255,0.5);
+width:40%;
 
-margin-top:3%;
-margin-left:30%;
-margin-right:30%;
+margin-top:15%;
+margin-left:35%;
+margin-right:35%;
 
 padding:20px; 10px;
+}
+
+@media (max-width: 1024px) {
+.showcase-container{
+/* button positioning settup - not necessary part */
+
+width:50%;
+
+margin-top:15%;
+margin-left:25%;
+margin-right:25%;
+
+padding:20px; 
+}
+	
+}
+
+
+@media (max-width: 768px) {
+.showcase-container{
+/* button positioning settup - not necessary part */
+
+width:90%;
+
+margin-top:15%;
+margin-left:10%;
+margin-right:10%;
+
+xxpadding:20px; 
+}
+	
 }
