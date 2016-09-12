@@ -1,0 +1,101 @@
+/*  CODE CREATED BY SVYATOSLAV LEVCHENKO */
+
+
+.register-form-group{
+	display:block;
+	xxbackground:red;
+	margin-bottom:23px;
+}
+
+.register-form-group input{
+display: block;
+background-color: rgb(255, 255, 255);
+
+border-bottom-style: solid;
+border-bottom-width: 1px;
+
+color: rgb(129, 130, 130);
+
+font-family: Arial,Helvetica,sans-serif;
+font-size: 13px;
+font-weight: 400;
+height: 40px;
+line-height: 21px;
+
+vertical-align: middle;
+
+border-radius:3px;
+width: 216px;
+height:36px;
+xxpadding-left:10px;
+}
+
+/* TEXT SHIFT INSIDE INPUTBOX */
+.register-form-group input{
+	text-indent: 7px !important;
+}
+
+.fileupload-overrider input[type="file"]{
+    opacity:0;
+}
+
+
+.photo-label{
+width:100%;
+}
+
+
+.fileupload-label{
+    border:solid;
+    border-color:#CCCCCC;
+    border-width:1px;
+    border-radius: 3px;
+    height:40px;
+}
+
+
+
+.fileupload-label input[type="text"] {
+float:left;
+position:absolute;
+display: block;
+
+margin-top:-38px;
+height:41px;
+}
+
+
+
+.fileupload-button{
+
+    position:absolute;
+    display: block;
+   
+    margin-top:-38px;
+    margin-left:136px;
+
+    height:30px;
+    padding:5px 6px;
+    
+    text-align: center;
+    
+    color:white;
+    background:black;
+
+border-color:#CCCCCC;
+border:none;
+border-radius:3px;
+border-left-style:none;
+border-top-left-radius: 0;
+border-bottom-left-radius: 0;
+}
+
+.fileupload-button p{
+margin-top:7px;
+text-transform: uppercase;
+
+font-family: Arial,Helvetica,sans-serif;
+font-size: 13px;
+font-weight: 400;
+}
+
