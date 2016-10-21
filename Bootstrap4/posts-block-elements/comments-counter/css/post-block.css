@@ -1,0 +1,53 @@
+
+/* COMMENT counter element by FlarMn (Svyatoslav Levchenko) ------------------------------------------- */
+.comment-counter{
+display:block;
+float:right;
+height:29px;
+width:29px;
+background:#F0F0F0;
+z-index: 10;
+}
+
+
+.comment-counter:hover{
+	background: red;
+	cursor:pointer;
+}
+
+
+.comment-counter:hover .comment-counter-arrow{
+	background: red;
+}
+
+
+.comment-counter:hover span{
+	color:white;
+}
+
+
+.comment-counter span{
+display: block;
+text-align:center;
+margin-top:9px;
+color:#7C7C7C;
+
+font-family: "Arial";
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 12px;
+
+}
+
+
+.comment-counter-arrow{
+height:12px;
+width:12px;
+background:#F0F0F0;
+float:right;
+margin-top:-7px;
+transform:skewY(60deg);
+}
+/* /.comment counter -------------------------------------------------------------------- */
+
