@@ -1,0 +1,74 @@
+
+
+.card{
+box-shadow: none !important;
+}
+
+
+.card-block{
+padding:0;
+}
+
+
+.post-link-block{
+float:left !important;
+}
+
+.post-link-block a{
+display: block;
+float:left ;
+font-family: "Roboto";
+font-size: 27px;
+font-style: normal;
+font-weight: 400;
+line-height: 32.4px;
+
+color: #25282A;
+
+text-align: left;
+width:85%;
+}
+
+
+.post-link-block a:hover{
+text-decoration: underline;
+}
+
+.post-link-block p{
+display: block;
+background:yellow;
+height:50px;
+	}
+
+
+.posts-caption {
+display:block;
+background: rgb(240, 240, 240); 
+height: 45px;
+border-left-style:solid;
+border-left-width:3px;
+border-left-color:red;
+
+left:0px;
+}
+
+.posts-caption h4{
+display: block;
+color: rgb(37, 40, 42);
+font-family: "Roboto";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 25.2px;
+
+margin-top:8px;
+
+}
+
+
+.space{
+	height:30px;
+	padding:0px;
+	margin-left:0px;
+	left:0px;
+}
