@@ -1,0 +1,107 @@
+
+
+#most-read-commented-right-tab{
+width:350px;
+}
+
+
+#most-read-commented-right-tab .nav-tabs{
+border-style:none !important;
+}
+
+
+
+#most-read-commented-right-tab .nav-item{
+	width: 50%;
+	margin:0;
+	padding:0;
+
+	overflow:visible;
+}
+
+
+#most-read-commented-right-tab .nav-item .active{
+	background:red !important;
+	color:white !important;
+}
+
+
+#most-read-commented-right-tab .nav-tab-arrow{
+display: block;
+	position: absolute;
+	width:29px;
+	height:29px;
+	background: red;
+	transform: rotate(45deg);
+
+	margin-left:41%;
+	margin-top:-25px;
+
+	z-index: -1;
+	opacity:0.0;
+}
+
+
+#most-read-commented-right-tab .nav-link{
+	padding-right:auto;
+	padding-left:auto;
+	background: #F0F0F0;
+	text-align: center;
+border-style:none !important;
+
+font-family: "Roboto";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 25.2px;
+color:black;
+}
+
+
+#most-read-commented-right-tab .tab-content{
+	display: block;
+	width:335px !important;
+	padding:0px !important;
+	margin-top:30px;
+}
+
+
+#most-read-right-tab{
+margin-left:-15px;
+padding:0px;
+	}
+
+
+#commented-right-tab{
+margin-left:-15px;
+padding:0px;
+	}
+
+
+
+.button-more{
+display: block;
+font-family: "Arial";
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 14px;
+
+color: rgb(37, 40, 42);
+
+padding: 15px 55px; 
+
+background:transparent;
+
+text-align:center;
+
+border-style:solid;
+border-width:1px;
+border-color:#E9E9E9;
+}
+
+
+.button-more:hover{
+color: white;
+background:red;
+}
