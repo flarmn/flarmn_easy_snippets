@@ -1,0 +1,81 @@
+
+
+#comments-form{
+
+}
+
+#comments-form .form-group{
+	background:#F0F0F0;
+	xxmargin-left:0px;
+	xxpadding:0;
+}
+
+
+#comments-form input{
+border-style:none;
+text-indent: 20px;
+}
+
+
+#comments-form input:focus{
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color:#F0F0F0 !important;
+
+	box-shadow: none;
+	background: white;
+}
+
+
+#comments-form textarea{
+	height:135px !important;
+	border-style:none;
+	padding:20px;
+
+}
+
+#comments-form textarea:focus{
+	border-style:solid;
+	border-width:1px;
+	border-color:#F0F0F0;
+
+	background:white;
+	}
+
+
+
+#comments-form .comments-submit-button{
+	float:right;
+
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 12px 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+font-family: "Arial";
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 15px;
+
+text-transform: uppercase;
+margin: 4px 2px;
+cursor: pointer;
+
+
+border-style:solid;
+border-width:3px;
+border-color:red;
+}
+
+
+#comments-form .comments-submit-button:hover{
+	background:none;
+	color:red;
+	border-style:solid;
+	border-width:3px;
+	border-color:red;
+	}
