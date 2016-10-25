@@ -1,0 +1,40 @@
+
+
+.comments-button i{
+display: block;
+float:left;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+padding:8px 10px;
+
+background:red;
+color:white;
+}
+
+
+.comments-button label{
+display: block;
+float:left;
+
+font-family: "Arial";
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 15px;
+
+padding:6.5px 10px;
+margin-top:0px;
+}
+
+
+.comments-button:hover label{
+	background: red;
+	cursor:pointer;
+	color:white;
+}
+
+
+.comments-button:hover i{
+	background: red;
+}
