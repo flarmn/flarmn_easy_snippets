@@ -1,0 +1,121 @@
+
+
+.social-panel{
+border-style:solid;
+border-width:1px;
+border-color:rgb(233, 233, 233);
+
+border-left-style:none;
+border-right-style:none;
+
+padding-top:20px;
+padding-bottom:25px;
+}
+
+.social-panel label{
+color: rgb(37, 40, 42);
+font-family: "Roboto";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 18px;
+}
+
+.social-panel ul{
+display: inline-block;
+float:right;
+}
+
+
+.social-panel ul li{
+float:left;
+}
+
+
+/* ---------------------------------------------------------------------------- */
+
+.social-panel .facebook-button{
+width:30px;
+height:30px;
+xxbackground-attachment: fixed;
+background-image: url("../icons/facebook_dark_fade.png") !important;
+background-position: 0px 0px;
+}
+
+.social-panel .facebook-button:hover{
+background-position: 0px -30px;
+}
+
+
+.social-panel .twitter-button{
+width:30px;
+height:30px;
+background-image: url("../icons/twitter_dark_fade.png") !important;
+background-position: 0px 0px;
+}
+
+.social-panel .twitter-button:hover{
+background-position: 0px -30px;
+}
+
+
+.social-panel .mail-button{
+width:30px;
+height:30px;
+background-image: url("../icons/mail_dark_fade.png") !important;
+background-position: 0px 0px;
+}
+
+.social-panel .mail-button:hover{
+background-position: 0px -30px;
+}
+
+
+.social-panel .envato-button{
+width:30px;
+height:30px;
+background-image: url("../icons/envato_dark_fade.png") !important;
+background-position: 0px 0px;
+}
+
+.social-panel .envato-button:hover{
+background-position: 0px -30px;
+}
+
+
+.social-panel .skype-button{
+width:30px;
+height:30px;
+background-image: url("../icons/skype_dark_fade.png") !important;
+background-position: 0px 0px;
+}
+
+.social-panel .skype-button:hover{
+background-position: 0px -30px;
+}
+
+.social-panel .instagram-button{
+width:30px;
+height:30px;
+background-image: url("../icons/instagram_dark_fade.png") !important;
+background-position: 0px 0px;
+}
+
+.social-panel .instagram-button:hover{
+background-position: 0px -30px;
+}
+
+
+.social-panel .pinterest-button{
+width:30px;
+height:30px;
+background-image: url("../icons/pinterst_dark_fade.png") !important;
+background-position: 0px 0px;
+}
+
+.social-panel .pinterest-button:hover{
+background-position: 0px -30px;
+}
+
+
+/* ----------------------------------------------------------------------------- */
