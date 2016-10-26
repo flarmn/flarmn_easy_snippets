@@ -1,0 +1,177 @@
+
+
+#vertical-carousel-posts{
+display: block;
+position: relative;
+height:360px;
+xxwidth:300px;
+overflow:hidden;
+
+xxborder-style:solid;
+xxborder-width:3px;
+xxborder-color:red;
+
+xxbackground: violet;
+}
+
+
+#vertical-carousel-posts .vertical-carousel-cine-film{
+display: block;
+position:absolute;
+}
+
+
+
+#vertical-carousel-posts .card{
+xxbackground: red;
+box-shadow: none !important;
+margin-bottom:30px;
+}
+
+
+
+#vertical-carousel-posts .card-block{
+xxbackground: green;
+padding:0px 0px;
+}
+
+
+
+#vertical-carousel-posts .carousel-image-block{
+display: block;
+margin-left:-20px;
+margin-right:20px;
+min-width:100px;
+}
+
+
+
+#vertical-carousel-posts .carousel-link{
+display:block;
+
+font-family: "Roboto";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22.4px;
+
+color: rgb(37, 40, 42);
+}
+
+
+#vertical-carousel-posts .carousel-link:hover{
+	text-decoration: underline;
+}
+
+
+
+#vertical-carousel-posts .carousel-section-info{
+display: block;	
+}
+
+
+#vertical-carousel-posts .carousel-section-info a{
+color: rgb(237, 28, 36);
+font-family: arial;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 12px;
+}
+
+
+#vertical-carousel-posts .carousel-section-info a:hover{
+	text-decoration: underline;
+}
+
+
+#vertical-carousel-posts .carousel-text-block{
+	display: block;
+	float:left;
+	xxmargin-left:-15px;
+	
+	xxbackground:yellow;
+	padding:0px;
+	
+}
+
+/* CAROUSEL CONTROLS */
+
+.vertical-carousel-controls{
+margin-left:52px;
+background: green;
+}
+
+
+.vertical-carousel-controls .carusel-up-button{
+display: block;
+position:absolute;
+
+margin-top:-45px;
+
+color:white;
+
+padding:10px 14px;
+background:black;
+
+font-size: 24px;
+font-style: normal;
+font-weight: 100;
+
+opacity:0.0;
+
+ -webkit-transition: margin-top 0.5s, opacity 1s; /* For Safari 3.1 to 6.0 */
+ transition: margin-top 0.5s, opacity 1s;
+
+ z-index: 20;
+}
+
+
+.vertical-carousel-controls .carusel-down-button{
+display: block;
+position:absolute;
+
+margin-top:350px;
+
+color:white;
+
+padding:10px 14px;
+background:black;
+
+font-size: 24px;
+font-style: normal;
+font-weight: 100;
+
+opacity:0.0;
+
+ -webkit-transition: margin-top 0.5s, opacity 1s; /* For Safari 3.1 to 6.0 */
+ transition: margin-top 0.5s, opacity 1s;
+
+z-index: 20;
+}
+
+
+.vertical-carousel-controls .carusel-up-button:hover{
+	background:red;
+	opacity:1.0;
+	cursor: pointer;
+}
+
+
+.vertical-carousel-controls .carusel-down-button:hover{
+	background:red;
+	opacity:1.0;
+	cursor:pointer;
+}
+
+
+
+#vertical-carousel-posts:hover .carusel-up-button{
+margin-top:0px;
+opacity:1.0;
+}
+
+#vertical-carousel-posts:hover .carusel-down-button{
+margin-top:315px;
+opacity:1.0;
+}
