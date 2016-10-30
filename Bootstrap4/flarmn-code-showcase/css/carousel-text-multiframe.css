@@ -1,0 +1,163 @@
+/*
+html{
+display: none;
+}
+*/
+/* Total carousel */
+#carousel-text-multiframe{
+background: none;
+xxmargin-top:20px;
+height:121px;
+}
+
+
+
+#carousel-text-multiframe .card{
+	background:none !important;
+	height:121px;
+	box-shadow:none;
+}
+
+/* Cauresel controls ................................................................................. */
+#carousel-text-multiframe .controls-top{
+display: block;
+position:absolute;
+margin-top:78px;
+z-index: 1000;
+}
+
+
+#carousel-text-multiframe .text-carousel-next>i{
+display: block;
+position:absolute;
+
+margin-left:1100px;
+margin-top:5px;
+
+color:white;
+
+padding:10px 14px;
+background:black;
+
+font-size: 24px;
+font-style: normal;
+font-weight: 100;
+
+opacity:0;
+
+ -webkit-transition: margin-left 0.5s, opacity 1s; /* For Safari 3.1 to 6.0 */
+  transition: margin-left 0.5s, opacity 1s;
+}
+
+
+
+#carousel-text-multiframe .text-carousel-next>i:hover{
+	background:red;
+	opacity:1.0;
+}
+
+
+
+
+#carousel-text-multiframe .text-carousel-prev>i{
+
+display: block;
+position:absolute;
+margin-top:7px;
+margin-left:-60px;
+
+color:white;
+
+padding:10px 14px;
+background:black;
+
+font-size: 24px;
+font-style: normal;
+font-weight: 100;
+
+opacity: 0.0;
+
+ -webkit-transition: margin-left 0.5s, opacity 1s; /* For Safari 3.1 to 6.0 */
+  transition: margin-left 0.5s, opacity 1s;
+}
+
+#carousel-text-multiframe .text-carousel-prev>i:hover{
+	background:red;
+	opacity:1.0;
+}
+
+
+#carousel-text-multiframe:hover .text-carousel-prev>i{
+background: block;
+margin-left:20px;
+opacity:0.8;
+}
+
+
+#carousel-text-multiframe:hover .text-carousel-next>i{
+background: block;
+margin-left:1050px;
+opacity:0.8;
+}
+
+
+
+/* /.Cauresel controls ................................................................................. */
+
+/* carousel-animated-background ................................................................................. */
+#carousel-text-multiframe .carousel-animated-background{
+	position:absolute;
+	background: #F0F0F0;
+	z-index: -10;
+
+	height:121px;
+	width:0px;
+
+	border-bottom-style:solid;
+	border-bottom-width:3px;
+	border-bottom-color:red;
+	margin-top:-12px;
+}
+/* /.carousel-animated-background ................................................................................. */
+
+
+/* carousel-section-info ................................................................................. */
+#carousel-text-multiframe .carousel-section-info label{
+
+margin-left:20px;
+margin-top:20px;
+
+font-family: "Arial";
+font-size: 11px;
+font-style: normal;
+font-weight: 400;
+line-height: 11px;
+
+color: rgb(171, 171, 171);
+
+}
+/* /.carousel-section-info ................................................................................. */
+
+
+/* carousel-link ................................................................................. */
+#carousel-text-multiframe .carousel-link{
+	display: block;
+xxbackground:violet;
+margin-left:20px;
+
+color: rgb(124, 124, 124);
+cursor: pointer;
+font-family: "Roboto";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22.4px;
+}
+
+#carousel-text-multiframe .carousel-link:hover{
+color:rgb(37, 40, 42);
+xxtext-decoration: underline;
+}
+
+/* /.carousel-link ................................................................................. */
+

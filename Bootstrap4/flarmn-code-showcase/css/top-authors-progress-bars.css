@@ -1,0 +1,109 @@
+
+
+#top-authors-right-panel{
+	width:350px;
+
+	xxborder-style:solid;
+	xxborder-width:1px;
+	xxborder-color:red;
+}
+
+
+#top-authors-right-panel .authors-block{
+xxpadding:0;
+}
+
+
+#top-authors-right-panel img{
+display:block;
+float:left;
+xxpadding:0;
+}
+
+
+#top-authors-right-panel .vertical-progress-bar-container{
+display: block;
+float:left;
+overflow:hidden;
+width:50px;
+height:100px;
+background:none;
+padding:0;
+}
+
+
+#top-authors-right-panel .vertical-bar{
+display: block;
+
+	height:100px;
+	width:50px;
+	background: #F0F0F0;
+	margin-top:100px;
+
+-webkit-transition: margin-top 2s; /* For Safari 3.1 to 6.0 */
+ transition: margin-top 2s;
+}
+
+#top-authors-right-panel .vertical-progress-bar-container label{
+display: block;
+position:absolute;
+font-family: "Roboto Condensed";
+font-size: 30px;
+font-style: normal;
+font-weight: 300;
+line-height: 33px;
+
+margin-top:50px;
+margin-left:10px;
+
+color: rgb(171, 171, 171);
+
+padding:0;
+
+}
+
+#top-authors-right-panel:hover .vertical-bar{
+	margin-top:0px;
+
+}
+
+
+
+#top-authors-right-panel .author-info-block{
+
+}
+
+
+#top-authors-right-panel .author-info-block a{
+
+color: rgb(37, 40, 42);
+font-family: "Roboto";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22.4px;
+
+margin-left:20px;
+
+}
+
+
+#top-authors-right-panel .author-info-block a:hover{
+text-decoration: underline;
+}
+
+
+#top-authors-right-panel .author-info-block label{
+display: block;
+
+color: rgb(124, 124, 124);
+font-family: "Roboto";
+font-size: 13px;
+font-style: normal;
+font-weight: 700;
+line-height: 19.5px;
+
+margin-left:-31px;
+
+text-align: center;
+}

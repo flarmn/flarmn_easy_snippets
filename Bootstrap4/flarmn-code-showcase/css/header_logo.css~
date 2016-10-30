@@ -9,7 +9,7 @@ height:auto;
 .header-logo h1{
 color: rgb(237, 28, 36);
 font-family: "Roboto Condensed";
-font-size: 9.3vw;
+font-size: 9.5vw;
 font-style: normal;
 font-weight: 700;
 

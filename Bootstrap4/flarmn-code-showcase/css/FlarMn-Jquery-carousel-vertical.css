@@ -3,15 +3,9 @@
 #vertical-carousel-posts{
 display: block;
 position: relative;
-height:360px;
-xxwidth:300px;
+height:380px;
+width:320px;
 overflow:hidden;
-
-xxborder-style:solid;
-xxborder-width:3px;
-xxborder-color:red;
-
-xxbackground: violet;
 }
 
 
@@ -23,7 +17,6 @@ position:absolute;
 
 
 #vertical-carousel-posts .card{
-xxbackground: red;
 box-shadow: none !important;
 margin-bottom:30px;
 }
@@ -31,7 +24,6 @@ margin-bottom:30px;
 
 
 #vertical-carousel-posts .card-block{
-xxbackground: green;
 padding:0px 0px;
 }
 
@@ -39,22 +31,20 @@ padding:0px 0px;
 
 #vertical-carousel-posts .carousel-image-block{
 display: block;
-margin-left:-20px;
-margin-right:20px;
 min-width:100px;
+padding:0px;
+margin-left:-15px;
 }
 
 
 
 #vertical-carousel-posts .carousel-link{
 display:block;
-
 font-family: "Roboto";
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 22.4px;
-
 color: rgb(37, 40, 42);
 }
 
@@ -87,12 +77,10 @@ line-height: 12px;
 
 #vertical-carousel-posts .carousel-text-block{
 	display: block;
-	float:left;
-	xxmargin-left:-15px;
-	
-	xxbackground:yellow;
 	padding:0px;
-	
+	padding-left:10px;
+	padding-right:5px;
+	width:205px;
 }
 
 /* CAROUSEL CONTROLS */
@@ -170,6 +158,7 @@ z-index: 20;
 margin-top:0px;
 opacity:1.0;
 }
+
 
 #vertical-carousel-posts:hover .carusel-down-button{
 margin-top:315px;

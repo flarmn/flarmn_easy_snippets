@@ -4,45 +4,41 @@ overflow-x: hidden;
 }
 
 
-
 .carousel-container{
 display: block;
-position:relative;
-width:100%;
 overflow:hidden;
-margin-top:-20px;
-
-height:550px;
+background:red;
+height:auto;
 }
 
 
 .carousel-frames{
+display:block;
 position:absolute;
 overflow:hidden;
-height:550px;
-
-width:7620px;
-left:-1185px;
-
+xxwidth:7620px;
+background:green;
 }
 
 
-.carousel-container li{
+
+.carousel-container .carousel-frames .carousel-frame{
+display: block;
 float:left;
-margin-left:10px;
-margin-top:5px;
+xxposition:absolute;
+height:auto;
 }
 
 
-.carousel-container li>img{
+.carousel-container .carousel-frame img{
 display:block;
-height:550px;
-xxwidth:1250px;
-
+height:auto;
+width:100%;
 background:red;
 }
 
 
+/* -------------------------------------------------------- */
 .carousel-info-block{
 position:absolute;
 display:block;
@@ -52,17 +48,24 @@ background-color: rgba(0,0,0,0.5);
 color:white;
 
 margin-top:-300px;
-margin-left:100px;
+margin-left:50px;
+z-index:110;
 }
 
 
-.carousel-info-block ul{
-	margin-top:17px;
-	margin-left:10px;
+.carousel-info-block>ul{
+	display: block;
+	margin-top:20px;
+	margin-left:20px;
 }
 
 
-.carousel-info-block-section-theme{
+.carousel-info-block>ul>.carousel-info-block-section-theme{
+display:block;
+float:left;
+width:auto !important;
+height:20px !important;
+
 
 font-family: arial;
 font-size: 12px;
@@ -70,49 +73,53 @@ font-style: normal;
 font-weight: 700;
 line-height: 12px;
 
-xxmargin-top:17px;
-padding-bottom:0px;
-
 border-bottom-style:solid;
 border-bottom-width:3px;
 border-bottom-color:white;
 }
 
 
-.carousel-info-block-section-date{
+.carousel-info-block>ul>.carousel-info-block-section-date{
+display:block;
+float:left;
+width:auto !important;
+height:20px !important;
+margin-left:10px;
+
 font-family: arial;
 font-size: 12px;
 font-style: normal;
 font-weight: 400;
 line-height: 12px;
-
-xxmargin-top:17px;
 }
 
 
 .carousel-info-block-section-article{
-float:left;
-
-
-xxmargin-top:10px;
-margin-left:17px;
+	display:block;
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:10px;
 }
 
-.carousel-info-block-section-article a{
+
+.carousel-info-block-section-article>a{
 font-family: "Roboto";
 font-size: 27px;
 font-style: normal;
 font-weight: 400;
 line-height: 32.4px;
-padding-right:17px;
+
 }
+
 
 .carousel-info-block-section-article:hover{
 	text-decoration: underline;
 }
 
 
+
 .carousel-info-block-section-shorttext{
+display: block;
 float:left;
 font-family: "Arial";
 font-size: 14px;
@@ -123,7 +130,7 @@ line-height: 21px;
 margin-top:10px;
 margin-left:17px;
 
-padding-right:17px;
+padding-right:30px;
 }
 
 
@@ -132,8 +139,9 @@ padding-right:17px;
     background:black;
     padding:13px 15px;  
 float:right;
-margin-top:-15px;
+margin-top:-20px;
 }
+
 
 
  .carousel-forward-control{
@@ -141,8 +149,9 @@ margin-top:-15px;
     background:black;
     padding:13px 15px; 
 float:right;
-margin-top:-15px;
+margin-top:-20px;
 }
+
 
 
 .carousel-back-control:hover, .carousel-forward-control:hover{
@@ -150,10 +159,100 @@ background:red;
 }
 
 
-.carousel-forward-control>i, .carousel-back-control>i {
+/* ---------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+@media (max-width: 640px) and (orientation:portrait) {
+
+.carousel-info-block{
+width:90vw;
+height:50px;
+margin-top:-60px;
+margin-left:10px;
+}
+
+.carousel-info-block>ul{
+	display: none;
+}
+
+
+.carousel-info-block-section-article{
+	xxcolor:green;
+	margin-top:-20px;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+
+.carousel-info-block-section-article a{
+float:left;
+font-family: "Roboto";
 font-size: 18px;
 font-style: normal;
 font-weight: 400;
-color: white;
-xxmargin-top:10px;
+line-height: 21.6px;
 }
+
+
+.carousel-info-block-section-shorttext{
+	display:none;
+}
+
+/*
+.carousel-back-control, .carousel-forward-control{
+	display: none;
+}
+*/
+.carousel-forward-control{
+	margin-top:-70px;
+	float:left;
+	opacity:0.5;
+}
+
+.carousel-back-control{
+	margin-top:-70px;
+	float:right;
+	opacity:0.5;
+}
+
+/* ............................................................... */
+}
+
+
+
+@media (max-width: 640px) and (orientation:landscape) {
+
+.carousel-info-block{
+width:70vw;
+height:106px;
+margin-top:-120px;
+margin-left:10px;
+}
+
+.carousel-info-block-section-article{
+	margin-top:-5px;
+	xxcolor:red;
+}
+
+
+.carousel-info-block-section-article a{
+float:left;
+font-family: "Roboto";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 21.6px;
+}
+
+.carousel-info-block-section-shorttext{
+	display:none;
+}
+/* ...................................................... */
+}
+
+

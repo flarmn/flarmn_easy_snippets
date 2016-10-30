@@ -1,0 +1,94 @@
+
+
+
+#featured-blog-rating-list{
+display: block;
+
+}
+
+
+#featured-blog-rating-list img{
+
+
+}
+
+
+#featured-blog-rating-list .bar-horizontal-text{
+	display: block;
+	height:148px;
+}
+
+
+#featured-blog-rating-list .bar-horizontal-text ul{
+	padding:0px 20px;
+}
+
+#featured-blog-rating-list .bar-horizontal-text{
+
+}
+
+#featured-blog-rating-list>ul{
+
+}
+
+
+#featured-blog-rating-list .counter-container{
+display: block;
+margin-top:10px;
+padding-top:20px;
+font-family: "Roboto Condensed";
+font-size: 30px;
+font-style: normal;
+font-weight: 300;
+line-height: 33px;
+
+color:rgb(171, 171, 171);
+}
+
+
+#featured-blog-rating-list .short-text-link-container{
+display: block;
+margin-top:10px;
+
+font-family: "Roboto";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22.4px;
+
+color: rgb(37, 40, 42);
+}
+
+
+#featured-blog-rating-list .short-text-link-container:hover{
+	text-decoration: underline;
+}
+
+
+
+#featured-blog-rating-list .section-container{
+display:block;
+margin-top:10px;
+
+color: rgb(237, 28, 36);
+font-family: arial;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 12px;
+}
+
+
+#featured-blog-rating-list .section-container:hover{
+text-decoration: underline;
+}
+
+
+#featured-blog-rating-list .bar-background-animated{
+	display: block;
+	position: absolute;
+	background:#F0F0F0;
+	width:10px;
+	height:148px;
+	z-index: -10;
+}

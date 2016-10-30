@@ -1,4 +1,8 @@
-
+div{
+	xxborder-style:solid; 
+	xxborder-width:1px; 
+	xxborder-color:red; 
+}
 
 .showcase-container-main{
 	xxborder-style:solid; 
