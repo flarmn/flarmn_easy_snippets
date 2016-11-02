@@ -17,7 +17,6 @@ background-color: rgb(54, 59, 64) !important;
 padding:0;
 
 xxheight:50%;
-float:left;
 }
 
 .megamenu .active{
@@ -180,6 +179,4 @@ margin-bottom:10px;
 
 .megamenu .dropdown-menu{
 background-color: rgb(54, 59, 64);
-padding:0;
-margin:0;
 }

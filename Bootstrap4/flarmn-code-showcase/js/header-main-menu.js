@@ -1,12 +1,14 @@
 
 
 $(document).ready(function(){
+first_item_left = $(".main-menu").position().left;
 
 $(".main-menu li>.dropdown-toggle").on("mouseover", function(e){
 $(this).dropdown("toggle");
 
 e.stopPropagation();
 e.preventDefault();
+
 
 setTimeout(function(){
   //alert("Boom!");
@@ -15,6 +17,14 @@ $(".megamenu").height(zrt);
 }, 200);
 
 $(".megamenu-container").width($(".devider").width());
+
+if ($(window).width()<=1024) {
+$(".megamenu-drop-down").css("margin-left", first_item_left +15);
+}
+else{
+$(".megamenu-drop-down").css("margin-left", first_item_left -10);
+}
+
 });
 
 

@@ -1,141 +1,125 @@
- $(document).ready(function(){
+ 
 
-//alert("a");
-distance = -1185;
+$(document).ready(function(){
+
+// STATIC VARS
 steps = 0;
-stoped = 0;
 
-$(".carousel-frames").css("left",distance+"px");
+// ----------------------------------------------------------------------------- GETHERING and SETTING PARAMETERS
+var onloadcaruselsetup;
+    clearTimeout(onloadcaruselsetup);
+    onloadcaruselsetup = setTimeout(window_resize_completed, 700);
+    
 
-var carouselDefaultAnim = setInterval(function(){
+
+//........................................................................... MAIN MOVE FORWARD TIMER
+carouselDefaultAnim = setInterval(function(){
+caruselMoveForward();
+}, 5000);
+//..................................................................../
+
+// ---------------------------------------------------------------------------------- ONWINDOW RESIZE 
+var windowresizetimer;
+$(window).resize(function() {
+    clearTimeout(windowresizetimer);
+    windowresizetimer = setTimeout(window_resize_completed, 500);
+    
+//--------------------------------------/
+});
+
+
+//....................................................................
+$(document).on('click',".carousel-back-control",function() {
+clearInterval(carouselDefaultAnim);
+caruselMoveForward();
+});
+//..................................................................../
+
+
+//....................................................................
+$(document).on('click',".carousel-forward-control",function() {
+clearInterval(carouselDefaultAnim);
+caruselMoveBackward();
+});
+
+
+//**********************************************************
+});
+
+
+
+
+
+// ----------------------------------------------------------------------------------- FUNCTIONS SECTION
+
+function window_resize_completed(){
+
+steps = 0;
+clearInterval(carouselDefaultAnim);
+$(".carousel-frames").css("left", "0px");
+
+
+
+// getting window size (width)
+window_width = $(window).width();
+
+// getting image size
+image_width = $(".carousel-frames>li:nth-child(1) img").width();
+
+image_height = $(".carousel-frames>li:nth-child(1)").height();
+
+// getting image proportions
+image_proprotions = image_width / image_height;
+
+// getting total count of list members
+film_strip_frames_total = $( ".carousel-frames>li" ).length;
+
+// calculating film strip total length:
+film_strip_length = film_strip_frames_total * window_width;
+
+
+$(".carousel-container").width(window_width);
+$(".carousel-container").height(window_width / image_proprotions);
+
+
+
+$(".carousel-frames").width(film_strip_length);
+$(".carousel-frames").height(window_width / image_proprotions);
+
+
+$(".carousel-container li").width(window_width);
+$(".carousel-container li").height(window_width / image_proprotions);
+
+
+carouselDefaultAnim = setInterval(function(){
 caruselMoveForward();
 }, 5000);
 
-
-
-
-$(document).on('click',".carousel-back-control",function() {
-
-
-clearInterval(carouselDefaultAnim);
-/*
-$(".carousel-frames").css("margin-left",distance);
-distance = distance - 1270;
-steps = steps + 1;
-*/
-
-caruselMoveForward();
-
-
-if(steps > 2){
- distance = -1185;
- steps = 0;
 }
-
-
-if(distance < -3725){
-distance = -1185;
-}
-
-
-});
-
-
-
-
-//back
-$(document).on('click',".carousel-forward-control",function() {
-//alert("12345");
-/*
-
-$(".carousel-frames").css("margin-left",distance);
-
-distance = distance + 1270;
-steps = steps - 1;
-*/
-
-
-clearInterval(carouselDefaultAnim);
-
-caruselMoveBackward();
-
-if(steps < 0){
- distance = -3725;
- steps = 3;
-}
-
-
-if(distance > -1185){
-distance = -3725;
-}
-
-
-
-});
-
-
-
-
-//--------------------------------------
-});
 
 
 
 function caruselMoveForward(){
-
-distance = distance - 1270;
+//var z = film_strip_frames_total;
+if(steps < film_strip_frames_total -2 ){
+$(".carousel-frames").animate({left: '+=-'+ $(".carousel-container li").width() +'px'}, 700);
 steps = steps + 1;
-
-if(steps > 1){
-$(".carousel-frame").eq(1).clone().insertAfter($(".carousel-frame").eq(3)); 
-$(".carousel-frame").eq(2).clone().insertAfter($(".carousel-frame").eq(4));
+}else{
+$(".carousel-frames").css("left", "0px");
+steps = 0;
+}
+// -------- ./caruselMoveForward()
 }
 
-
-$(".carousel-frames")
-.css({left:'-1185px', position:'relative'})
-.animate({left: distance +"px" }, 700); 
-
-
-//$(".carousel-frame").eq(1).remove(); 
-
-if(steps > 2){
-	 
- distance = -1185;
- steps = 0; 
- $(".carousel-frame:last-child").remove();
- $(".carousel-frame:last-child").remove();
-}
-
-
-}
 
 
 function caruselMoveBackward(){
-
-distance = distance + 1270;
+if(steps < film_strip_frames_total -2 && steps > 0 ){
+$(".carousel-frames").animate({left: '-=-'+ $(".carousel-container li").width() +'px'}, 700);
 steps = steps - 1;
-
-/*
-if(steps > 1){
-$(".carousel-frame").eq(1).clone().insertAfter($(".carousel-frame").eq(3)); 
-$(".carousel-frame").eq(2).clone().insertAfter($(".carousel-frame").eq(4));
+}else{
+$(".carousel-frames").css("left", "0px");
+steps = 0;
 }
-*/
-
-$(".carousel-frames")
-.animate({left: distance +"px" }, 700); 
-
-
-//$(".carousel-frame").eq(1).remove(); 
-
-if(steps < 1){
-	 
- distance = -5000;
- steps = 3; 
- //$(".carousel-frame:last-child").remove();
- //$(".carousel-frame:last-child").remove();
-}
-
-
+// -------- ./caruselMoveForward()
 }

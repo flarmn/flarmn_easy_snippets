@@ -1,0 +1,258 @@
+
+html{
+overflow-x: hidden;
+}
+
+
+.carousel-container{
+display: block;
+overflow:hidden;
+background:red;
+height:auto;
+}
+
+
+.carousel-frames{
+display:block;
+position:absolute;
+overflow:hidden;
+xxwidth:7620px;
+background:green;
+}
+
+
+
+.carousel-container .carousel-frames .carousel-frame{
+display: block;
+float:left;
+xxposition:absolute;
+height:auto;
+}
+
+
+.carousel-container .carousel-frame img{
+display:block;
+height:auto;
+width:100%;
+background:red;
+}
+
+
+/* -------------------------------------------------------- */
+.carousel-info-block{
+position:absolute;
+display:block;
+width:390px;
+height:227px;
+background-color: rgba(0,0,0,0.5);
+color:white;
+
+margin-top:-300px;
+margin-left:50px;
+z-index:110;
+}
+
+
+.carousel-info-block>ul{
+	display: block;
+	margin-top:20px;
+	margin-left:20px;
+}
+
+
+.carousel-info-block>ul>.carousel-info-block-section-theme{
+display:block;
+float:left;
+width:auto !important;
+height:20px !important;
+
+
+font-family: arial;
+font-size: 12px;
+font-style: normal;
+font-weight: 700;
+line-height: 12px;
+
+border-bottom-style:solid;
+border-bottom-width:3px;
+border-bottom-color:white;
+}
+
+
+.carousel-info-block>ul>.carousel-info-block-section-date{
+display:block;
+float:left;
+width:auto !important;
+height:20px !important;
+margin-left:10px;
+
+font-family: arial;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 12px;
+}
+
+
+.carousel-info-block-section-article{
+	display:block;
+	margin-left:20px;
+	margin-right:20px;
+	margin-top:10px;
+}
+
+
+.carousel-info-block-section-article>a{
+font-family: "Roboto";
+font-size: 27px;
+font-style: normal;
+font-weight: 400;
+line-height: 32.4px;
+
+}
+
+
+.carousel-info-block-section-article:hover{
+	text-decoration: underline;
+}
+
+
+
+.carousel-info-block-section-shorttext{
+display: block;
+float:left;
+font-family: "Arial";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 21px;
+
+margin-top:10px;
+margin-left:17px;
+
+padding-right:30px;
+}
+
+
+.carousel-back-control{
+	display:inline;
+    background:black;
+    padding:13px 15px;  
+float:right;
+margin-top:-20px;
+}
+
+
+
+ .carousel-forward-control{
+ 	display:inline;
+    background:black;
+    padding:13px 15px; 
+float:right;
+margin-top:-20px;
+}
+
+
+
+.carousel-back-control:hover, .carousel-forward-control:hover{
+background:red;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+@media (max-width: 640px) and (orientation:portrait) {
+
+.carousel-info-block{
+width:90vw;
+height:50px;
+margin-top:-60px;
+margin-left:10px;
+}
+
+.carousel-info-block>ul{
+	display: none;
+}
+
+
+.carousel-info-block-section-article{
+	xxcolor:green;
+	margin-top:-20px;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+
+.carousel-info-block-section-article a{
+float:left;
+font-family: "Roboto";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 21.6px;
+}
+
+
+.carousel-info-block-section-shorttext{
+	display:none;
+}
+
+/*
+.carousel-back-control, .carousel-forward-control{
+	display: none;
+}
+*/
+.carousel-forward-control{
+	margin-top:-70px;
+	float:left;
+	opacity:0.5;
+}
+
+.carousel-back-control{
+	margin-top:-70px;
+	float:right;
+	opacity:0.5;
+}
+
+/* ............................................................... */
+}
+
+
+
+@media (max-width: 640px) and (orientation:landscape) {
+
+.carousel-info-block{
+width:70vw;
+height:106px;
+margin-top:-120px;
+margin-left:10px;
+}
+
+.carousel-info-block-section-article{
+	margin-top:-5px;
+	xxcolor:red;
+}
+
+
+.carousel-info-block-section-article a{
+float:left;
+font-family: "Roboto";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 21.6px;
+}
+
+.carousel-info-block-section-shorttext{
+	display:none;
+}
+/* ...................................................... */
+}
+
+
