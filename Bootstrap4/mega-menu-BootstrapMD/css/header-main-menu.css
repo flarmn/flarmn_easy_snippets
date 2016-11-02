@@ -4,6 +4,7 @@
 height:46px;
 padding:0;
 
+
 	border-top-style:solid;
 	border-top-width:3px;
 	border-top-color:#E9E9E9;
@@ -26,7 +27,7 @@ xxpadding:0;
 .main-menu ul li{
 display:block;
 float:left;
-padding:10px 15px;
+padding:10px 10px;
 background: none;
 margin-top:-3px;
 z-index:10;
@@ -34,9 +35,8 @@ z-index:10;
 	border-top-style:solid;
 	border-top-width:3px;
 	border-top-color:#E9E9E9;
-
-
 }
+
 
 
 .main-menu ul li:hover{
@@ -51,20 +51,19 @@ border-top-color:red;
 }
 
 .main-menu ul li:first-child{
-xxpadding-right:0px;
+xxmargin-left:-10px;
+
 }
 
 
 .main-menu ul li a{
 font-family: "Roboto";
-font-size: 18px;
+font-size: 14px;
 font-style: normal;
 font-weight: 400;
-line-height: 18px;
-
-
-
+line-height: 16px;
 }
+
 
 .main-menu .nav-link{
 
@@ -105,4 +104,102 @@ color:white;
 
 width:210px;
 padding:15px 15px;
+}
+
+
+
+
+
+@media (max-width: 768px) and (orientation:portrait) {
+
+.main-menu {
+	xxborder-style:none !important;
+	xxborder-width:0px !important;
+}
+
+.main-menu-mobile-button{
+	z-index:100 !important;
+	margin-left:47%;
+	margin-right:53%;
+}
+
+
+.main-menu ul li{
+display:block;
+float:left;
+padding:10px 10px;
+background: none;
+margin-top:-3px;
+
+	border-top-style:solid;
+	border-top-width:3px;
+	border-top-color:#E9E9E9;
+}
+
+
+.main-menu ul li a{
+font-family: "Roboto";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px;
+}
+
+
+.megamenu-item{
+display: none !important;
+}
+
+
+}
+
+
+
+
+@media (max-width: 640px) and (orientation:landscape) {
+
+.main-menu-mobile-button{
+	margin-left:47%;
+	margin-right:53%;
+}
+
+
+.main-menu ul li a{
+font-size: 11px !important;
+}
+
+
+}
+
+
+
+
+@media (max-width: 768px) and (orientation:landscape) {
+
+.main-menu ul li{
+display:block;
+float:left;
+padding:10px 10px;
+background: none;
+margin-top:-3px;
+z-index:10;
+
+	border-top-style:solid;
+	border-top-width:3px;
+	border-top-color:#E9E9E9;
+}
+
+
+.main-menu ul li a{
+font-family: "Roboto";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px;
+}
+
+.megamenu-item{
+display: none !important;
+}
+
 }
