@@ -3,6 +3,10 @@ html{
 overflow-x: hidden;
 }
 
+body{
+	overflow-x: hidden;
+}
+
 
 .carousel-container{
 display: block;
@@ -14,7 +18,7 @@ height:auto;
 
 .carousel-frames{
 display:block;
-position:absolute;
+position:relative;
 overflow:hidden;
 xxwidth:7620px;
 background:green;
@@ -44,14 +48,12 @@ position:absolute;
 display:block;
 width:390px;
 height:227px;
-background-color: rgba(0,0,0,0.2);
+background-color: rgba(0,0,0,0.5);
 color:white;
 
 margin-top:-300px;
 margin-left:50px;
 z-index:110;
-
-
 }
 
 
@@ -123,7 +125,7 @@ line-height: 32.4px;
 .carousel-info-block-section-shorttext{
 display: block;
 float:left;
-font-family: "Arial";
+font-family: "Roboto";
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -170,6 +172,16 @@ background:red;
 
 
 @media (max-width: 640px) and (orientation:portrait) {
+
+
+html{
+overflow-x: hidden;
+}
+
+	body{
+		xxwidth:300px;
+		overflow-x: hidden;
+	}
 
 .carousel-info-block{
 width:90vw;

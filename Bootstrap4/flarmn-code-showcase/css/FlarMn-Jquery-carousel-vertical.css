@@ -4,7 +4,7 @@
 display: block;
 position: relative;
 height:380px;
-width:320px;
+width:auto;
 overflow:hidden;
 }
 
@@ -80,7 +80,7 @@ line-height: 12px;
 	padding:0px;
 	padding-left:10px;
 	padding-right:5px;
-	width:205px;
+	width:60%;
 }
 
 /* CAROUSEL CONTROLS */

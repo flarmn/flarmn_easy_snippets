@@ -62,7 +62,7 @@ $(".carousel-frames").css("left", "0px");
 
 // getting window size (width)
 window_width = $(window).width();
-
+//alert($(window).width());
 // getting image size
 image_width = $(".carousel-frames>li:nth-child(1) img").width();
 
@@ -89,6 +89,8 @@ $(".carousel-frames").height(window_width / image_proprotions);
 
 $(".carousel-container li").width(window_width);
 $(".carousel-container li").height(window_width / image_proprotions);
+
+//$(".carousel-container").css("overflow","hidden");
 
 
 carouselDefaultAnim = setInterval(function(){

@@ -9,6 +9,11 @@ xxheight:148px;
 xxbackground:red;
 }
 
+
+#featured-blog-rating-list-commented img{
+width:100%;
+}
+
 #featured-blog-rating-list-commented .bar-horizontal-text{
 	display: block;
 	xxbackground: none;
