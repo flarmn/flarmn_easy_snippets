@@ -34,10 +34,6 @@ border-radius: 9px;
 }
 
 
-#popupwindow_horizontal *{
-
-}
-
 
 #popupwindow_horizontal .popup_window_title{
 margin-left:20px;
@@ -49,16 +45,6 @@ font-family: "Archivo Narrow",sans-serif;
 color:white;
 text-transform: uppercase;
 
-}
-
-#popupwindow_horizontal .popup_window_title>h3{
-  /*
-font-size:18px;
-font-weight:700px;
-font-family: "Archivo Narrow",sans-serif;
-color:white;
-text-transform: uppercase;
-*/
 }
 
 
