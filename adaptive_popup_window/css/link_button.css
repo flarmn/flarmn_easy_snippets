@@ -1,20 +1,19 @@
+a {
+	/* button settup */
+	padding: 15px 30px;
 
-a{
-/* button settup */
-padding:15px 30px;
+	color: white;
+	background: #273440;
 
-color:white;
-background: #273440;
+	border-radius: 6px;
 
-border-radius: 6px;
-
-text-decoration: none;
-text-transform: uppercase;
-font-family: "Archivo Narrow",sans-serif;
-font-size:14px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "Archivo Narrow", sans-serif;
+	font-size: 14px;
 }
 
 
-a:hover{
-background: #2CB9A8;
+a:hover {
+	background: #2CB9A8;
 }
