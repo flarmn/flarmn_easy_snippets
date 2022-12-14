@@ -1,16 +1,15 @@
-body{
-overflow-x:none;
-margin:0;
-padding:0;
+body {
+    overflow-x: none;
+    margin: 0;
+    padding: 0;
 }
 
 
-.showcase-container{
-/* button positioning settup - not necessary part */
-display:inline-block;
-float:left;
-margin-top:5%;
-xxmargin-left:45%;
-background:red;
-width:100%;
+.showcase-container {
+    /* button positioning settup - not necessary part */
+    display: inline-block;
+    float: left;
+    margin-top: 5%;
+    background: red;
+    width: 100%;
 }
